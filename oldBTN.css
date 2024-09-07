@@ -1,0 +1,56 @@
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Botón estilo Internet Explorer antiguo */
+.btn-ie {
+    background-color: #ececec;
+    color: #333;
+    border: 2px solid #666;
+    padding: 10px 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Botón estilo Firefox antiguo */
+.btn-firefox {
+    background-color: #f8f8f8;
+    color: #444;
+    border: 1px solid #aaa;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-style: italic;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Botón estilo Chrome antiguo */
+.btn-chrome {
+    background-color: #dfefff;
+    color: #000;
+    border: 1px solid #89c9f9;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Hover effects */
+.btn-ie:hover {
+    background-color: #ddd;
+}
+
+.btn-firefox:hover {
+    background-color: #e7e7e7;
+}
+
+.btn-chrome:hover {
+    background-color: #cdefff;
+}

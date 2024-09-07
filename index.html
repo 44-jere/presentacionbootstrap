@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inconsistencia.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+        <!-- Sección 1: ¿Qué es Bootstrap? -->
+        <section>
+            <div>
+                <h1>¿Qué es Bootstrap?</h1>
+                <p>
+                    <strong>Bootstrap</strong> es un <strong>framework front-end</strong> de código abierto que facilita el diseño y desarrollo de sitios web y aplicaciones web. Proporciona una colección de herramientas, como plantillas de diseño basadas en HTML, CSS y JavaScript, que ayudan a crear interfaces web adaptables y visualmente atractivas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 3: ¿Quiénes lo crearon y cuándo? -->
+        <section>
+            <div>
+                <h1>¿Quiénes lo crearon y cuándo?</h1>
+                <p>
+                    Bootstrap fue creado por <strong>Mark Otto</strong> y <strong>Jacob Thornton</strong>, desarrolladores de Twitter. La primera versión fue lanzada en <strong>2011</strong>, inicialmente para ayudar a los equipos de desarrollo de Twitter a trabajar con una base de diseño común.
+                </p>
+            </div>
+        </section>
+    
+        <!-- Sección 2: ¿Por qué se creó? -->
+        <section>
+            <div>
+                <h1>¿Por qué se creó?</h1>
+                <p>
+                    Bootstrap se creó para resolver problemas de <strong>inconsistencia en el diseño</strong> y la <strong>usabilidad</strong> en proyectos web. Antes de su creación, los desarrolladores enfrentaban dificultades al hacer que los sitios fueran coherentes entre diferentes navegadores y dispositivos. El objetivo era estandarizar y simplificar el proceso de diseño web, haciendo que fuera más fácil y rápido desarrollar sitios web responsivos y modernos.
+                </p>
+            </div>
+        </section>
+
+        <article>
+            <!-- Sección de inconsistencia entre navegadores -->
+            <div class="section">
+                <h2>Inconsistencia entre navegadores</h2>
+                <p>Antes de la llegada de Bootstrap, un problema común era la inconsistencia en el diseño entre navegadores. Por ejemplo, algunos navegadores renderizaban elementos como botones y formularios de manera diferente.</p>
+                <p>En Internet Explorer, los botones y formularios tenían un estilo predefinido que era diferente al de Chrome o Firefox. Esto obligaba a los desarrolladores a escribir estilos específicos para cada navegador.</p>
+                <p>Ejemplo de un botón antes de Bootstrap:</p>
+                <div class="button-container">
+                    <!-- Botón estilo Internet Explorer -->
+                    <button class="btn-ie">Botón IE</button>
+                
+                    <!-- Botón estilo Firefox -->
+                    <button class="btn-firefox">Botón Firefox</button>
+                
+                    <!-- Botón estilo Chrome -->
+                    <button class="btn-chrome">Botón Chrome</button>
+                </div>
+                <div class="code-example">
+                    <code>
+                        &lt;button&gt;Enviar&lt;/button&gt;
+                    </code>
+                </div>
+                <p>El resultado en cada navegador podría verse distinto, con diferentes colores, bordes y tamaños.</p>
+            </div>
+        
+            <!-- Sección de solución con Bootstrap -->
+            <div class="section">
+                <h2>Solución con Bootstrap</h2>
+                <p>Bootstrap resolvió este problema proporcionando estilos consistentes para elementos como botones, formularios, tablas y más. Con una simple clase de Bootstrap, el mismo botón se vería igual en todos los navegadores.</p>
+                <p>Ejemplo de un botón usando Bootstrap:</p>
+                <div class="button-container">
+                    <!-- Botón estilo Internet Explorer -->
+                    <button onclick="addClass(this)" id="btn-ie">Botón IE</button>
+                
+                    <!-- Botón estilo Firefox -->
+                    <button onclick="addClass(this)" id="btn-firefox">Botón Firefox</button>
+                
+                    <!-- Botón estilo Chrome -->
+                    <button onclick="addClass(this)" id="btn-chrome">Botón Chrome</button>
+                </div>
+                <div class="code-example">
+                    <code>
+                        &lt;button class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+                    </code>
+                </div>
+                <p>Con la clase <code>btn btn-primary</code>, Bootstrap asegura que el estilo del botón sea uniforme en todos los navegadores, eliminando la necesidad de escribir estilos específicos para cada uno.</p>
+            </div>
+        </article>
+    
+        <!-- Sección 4: ¿Por qué es tan usado? -->
+        <section>
+            <div>
+                <h1>¿Por qué es tan usado?</h1>
+                <p>
+                    Bootstrap es ampliamente utilizado por varias razones:
+                    <ul>
+                        <li><strong>Facilidad de uso</strong>: Proporciona componentes y estilos listos para usar, lo que reduce el tiempo de desarrollo.</li>
+                        <li><strong>Responsive design</strong>: Permite que los sitios web se adapten fácilmente a diferentes tamaños de pantalla, desde móviles hasta escritorios.</li>
+                        <li><strong>Compatibilidad con navegadores</strong>: Asegura que el diseño sea consistente entre diversos navegadores web.</li>
+                        <li><strong>Comunidad grande</strong>: Al ser uno de los frameworks más populares, cuenta con una gran comunidad que desarrolla plugins y extiende su funcionalidad.</li>
+                        <li><strong>Personalización</strong>: Se puede modificar o adaptar fácilmente a las necesidades de cualquier proyecto.</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abgPMKV"
+        data-pen-title="Untitled" data-editable="jeremy-ico"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jeremy-ico/pen/abgPMKV">
+                Untitled</a> by jeremy ico (<a href="https://codepen.io/jeremy-ico">@jeremy-ico</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWZeJBP"
+        data-pen-title="Bootstrap" data-editable="jeremy-ico"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/jeremy-ico/pen/NWZeJBP">
+                Bootstrap</a> by jeremy ico (<a href="https://codepen.io/jeremy-ico">@jeremy-ico</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="./addClass.js"></script>
+
+</body>
+
+</html>
